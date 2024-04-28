@@ -20,11 +20,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-ss-server/ipinfo"
-	"github.com/Jigsaw-Code/outline-ss-server/service/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 	promtest "github.com/prometheus/client_golang/prometheus/testutil"
 	"github.com/stretchr/testify/require"
+	"github.com/tonikpro/outline-ss-server/ipinfo"
+	"github.com/tonikpro/outline-ss-server/service/metrics"
 )
 
 type noopMap struct{}

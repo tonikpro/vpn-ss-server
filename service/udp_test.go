@@ -23,12 +23,12 @@ import (
 	"time"
 
 	"github.com/Jigsaw-Code/outline-sdk/transport/shadowsocks"
-	"github.com/Jigsaw-Code/outline-ss-server/ipinfo"
-	onet "github.com/Jigsaw-Code/outline-ss-server/net"
 	logging "github.com/op/go-logging"
 	"github.com/shadowsocks/go-shadowsocks2/socks"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tonikpro/outline-ss-server/ipinfo"
+	onet "github.com/tonikpro/outline-ss-server/net"
 )
 
 const timeout = 5 * time.Minute

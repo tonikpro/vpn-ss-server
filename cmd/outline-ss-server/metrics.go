@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Jigsaw-Code/outline-ss-server/ipinfo"
-	"github.com/Jigsaw-Code/outline-ss-server/service"
-	"github.com/Jigsaw-Code/outline-ss-server/service/metrics"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/tonikpro/outline-ss-server/ipinfo"
+	"github.com/tonikpro/outline-ss-server/service"
+	"github.com/tonikpro/outline-ss-server/service/metrics"
 )
 
 const namespace = "shadowsocks"

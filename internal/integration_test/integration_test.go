@@ -26,12 +26,12 @@ import (
 
 	"github.com/Jigsaw-Code/outline-sdk/transport"
 	"github.com/Jigsaw-Code/outline-sdk/transport/shadowsocks"
-	"github.com/Jigsaw-Code/outline-ss-server/ipinfo"
-	"github.com/Jigsaw-Code/outline-ss-server/service"
-	"github.com/Jigsaw-Code/outline-ss-server/service/metrics"
 	logging "github.com/op/go-logging"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tonikpro/outline-ss-server/ipinfo"
+	"github.com/tonikpro/outline-ss-server/service"
+	"github.com/tonikpro/outline-ss-server/service/metrics"
 )
 
 const maxUDPPacketSize = 64 * 1024

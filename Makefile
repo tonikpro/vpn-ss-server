@@ -24,3 +24,7 @@ database_up:
 
 .PHONY: start
 start: database_up migrate
+
+.PHONY: build
+build:
+	GOOS="linux" GOARCH="amd64" go build -o ./bin/service-linux github.com/tonikpro/outline-ss-server/cmd/outline-ss-server

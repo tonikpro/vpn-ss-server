@@ -19,8 +19,8 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/Jigsaw-Code/outline-ss-server/repository"
 	"github.com/jackc/pgx/v5"
+	"github.com/tonikpro/outline-ss-server/repository"
 	"net"
 	"net/http"
 	"os"
@@ -31,11 +31,11 @@ import (
 
 	"github.com/Jigsaw-Code/outline-sdk/transport"
 	"github.com/Jigsaw-Code/outline-sdk/transport/shadowsocks"
-	"github.com/Jigsaw-Code/outline-ss-server/ipinfo"
-	"github.com/Jigsaw-Code/outline-ss-server/service"
 	"github.com/op/go-logging"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	"github.com/tonikpro/outline-ss-server/ipinfo"
+	"github.com/tonikpro/outline-ss-server/service"
 	"golang.org/x/term"
 )
 
@@ -217,7 +217,7 @@ func main() {
 	flag.StringVar(&flags.IPASNDB, "ip_asn_db", "", "Path to the ip-to-ASN mmdb file")
 	flag.DurationVar(&flags.natTimeout, "udptimeout", defaultNatTimeout, "UDP tunnel timeout")
 	flag.IntVar(&flags.replayHistory, "replay_history", 0, "Replay buffer size (# of handshakes)")
-	flag.BoolVar(&flags.Verbose, "verbose", false, "Enables verbose logging output")
+	flag.BoolVar(&flags.Verbose, "verbose", true, "Enables verbose logging output")
 	flag.BoolVar(&flags.Version, "version", false, "The version of the server")
 
 	flag.Parse()

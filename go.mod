@@ -1,4 +1,4 @@
-module github.com/Jigsaw-Code/outline-ss-server
+module github.com/tonikpro/outline-ss-server
 
 require (
 	github.com/Jigsaw-Code/outline-sdk v0.0.14
